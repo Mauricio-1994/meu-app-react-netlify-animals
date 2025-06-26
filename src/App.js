@@ -7,188 +7,166 @@ const animalData = [
     id: 1,
     commonName: "Macaco-prego",
     scientificName: "Sapajus apella",
-    imageUrl: "https://placehold.co/400x300/5E81AC/000000?text=Macaco-Prego", // [Image of Macaco-prego]
-    habits: "Arborícola, vive em grupos sociais grandes. Diurno e ativo.",
-    lifeExpectancy: "Cerca de 15 a 25 anos na natureza.",
-    diet: "Onívora, comendo frutas, insetos, pequenos vertebrados e ovos. Usa ferramentas.",
-    distribution: "América do Sul, em florestas tropicais e subtropicais.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+macaco+prego" // Exemplo de link para som/vídeo
+    imageUrl: "https://i.imgur.com/niW25T6.jpeg", // [Image of Macaco-prego]
+    habits: "esses animais são conhecidos por sua inteligência e habilidades no uso de ferramentas. Possuem hábitos diurnos e preferem se movimentar pelas árvores, locomovendo-se com agilidade e usando sua cauda para se pendurar.",
+    lifeExpectancy: "pode chegar a 50 anos.",
+    diet: "são onívoros e têm uma dieta variada incluindo frutos, insetos, brotos, flores, sementes e pequenos vertebrados.",
+    distribution: "Mata Atlântica do sudeste do Brasil e nordeste da Argentina.",
+    learnMoreLink: "https://www.youtube.com/watch?v=0HSqGn2RsxI" // Exemplo de link para som/vídeo
   },
   {
     id: 2,
-    commonName: "Quati",
-    scientificName: "Nasua nasua",
-    imageUrl: "https://placehold.co/400x300/B48EAD/000000?text=Quati", // [Image of Quati]
-    habits: "Diurno, vive em grupos sociais (fêmeas e filhotes) ou solitário (machos).",
-    lifeExpectancy: "Até 10 anos na natureza.",
-    diet: "Onívora, comendo frutas, insetos, ovos, pequenos vertebrados e raízes.",
-    distribution: "América do Sul, Central e parte da América do Norte, em florestas e áreas arborizadas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+quati" // Exemplo de link para som/vídeo
+    commonName: "Quati-de-cauda-anelada",
+    scientificName: " Nasua nasua",
+    imageUrl: "https://i.imgur.com/uqhqLa8.jpeg", // [Image of Quati]
+    habits: "vivem em grupos principalmente formados por fêmeas e filhotes e são animais de hábitos sociais e diurnos. Os machos adultos normalmente se juntam aos grupos apenas em época de reprodução. São ágeis, utilizam a cauda para equilíbrio e são capazes de se locomover tanto no solo quanto em árvores.",
+    lifeExpectancy: "entre 7 a 8 anos na natureza, mas pode chegar a 15 anos em cativeiro.",
+    diet: "são onívoros, com uma dieta variada que inclui insetos, pequenos animais, frutas e até mesmo restos de comida de origem humana.",
+    distribution: "América do Sul",
+    learnMoreLink: "https://www.youtube.com/watch?v=C7t4rrMrGbY" // Exemplo de link para som/vídeo
   },
   {
     id: 3,
     commonName: "Tamanduá-Mirim", // Alterado de "Tamanduá"
     scientificName: "Tamandua tetradactyla", // Atualizado para Tamanduá-Mirim
-    imageUrl: "https://placehold.co/400x300/BF616A/000000?text=Tamandu%C3%A1-Mirim", // [Image of Tamanduá-Mirim]
-    habits: "Solitário e terrestre, com hábitos diurnos ou noturnos dependendo da temperatura.",
-    lifeExpectancy: "Até 15 anos na natureza, mais em cativeiro.",
-    diet: "Mirmecófago, alimentando-se exclusivamente de formigas e cupins.",
-    distribution: "América Central e do Sul, em savanas, florestas e campos.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+tamandu%C3%A1-mirim" // Exemplo de link para som/vídeo
+    imageUrl: "https://i.imgur.com/lAfsgnG.jpeg", // [Image of Tamanduá-Mirim]
+    habits: ": é um animal de hábitos solitários e predominantemente noturno, embora pssa ser visto durante o dia em áreas mais tranquilas ou em busca de alimento. Vivem tanto em árvores quanto no chão e utilizam tocos de árvores, cavidades naturais ou tocas de tatus para descansar.",
+    lifeExpectancy: ": em cativeiro pode chegar a 19 anos, enquanto na natureza a expectativa é entre 7 e 10 anos.",
+    diet: "é insetívoro, ou seja, sua alimentação é baseada principalmente em formigas e cupins. Além disso, ele pode se alimentar de larvas de abelhas, cera e mel.",
+    distribution: "possui uma ampla distribuição geográfica na América do Sul. No Brasil, ocorre em todos os biomas.",
+    learnMoreLink: "https://www.youtube.com/watch?v=-l4pqUiXjnA" // Exemplo de link para som/vídeo
   },
   {
     id: 4,
     commonName: "Teiú", // Alterado de "Lagarto (teiú)"
-    scientificName: "Salvator merianae",
-    imageUrl: "https://placehold.co/400x300/EBCB8B/000000?text=Tei%C3%BA", // [Image of Teiú]
-    habits: "Diurno e terrestre, muito ativo na busca por alimento. Escala árvores e nada bem.",
-    lifeExpectancy: "Até 20 anos em cativeiro, menos na natureza.",
-    diet: "Onívora, alimentando-se de insetos, ovos, pequenos roedores, frutas e vegetais.",
-    distribution: "América do Sul, em campos, cerrados e áreas de floresta aberta.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=tei%C3%BA" // Exemplo de link para som/vídeo
+    scientificName: "Tupinambis merianae",
+    imageUrl: "https://i.imgur.com/xqBipVs.jpeg", // [Image of Teiú]
+    habits: "é um lagarto com hábitos diurnos e terrestres, muitas vezes encontrado em áreas abertas, bordas da mata e até mesmo áreas urbanizadas. São conhecidos por se expor ao sol afim de regularem a temperatura corporal. Buscam ativamente seu alimento, utilizando a língua bifurcada para captar odores do ambiente. ",
+    lifeExpectancy: "entre 15 e 20 anos.",
+    diet: "comem frutas, ovos, insetos, pequenos roedores e aves.",
+    distribution: "ocorre em diversas regiões da América do Sul.",
+    learnMoreLink: "https://www.youtube.com/watch?v=Cpyl4JVDvoE " // Exemplo de link para som/vídeo
   },
   {
     id: 5,
     commonName: "Cutia", 
-    scientificName: "Dasyprocta leporina", 
-    imageUrl: "https://placehold.co/400x300/B48EAD/000000?text=Cutia", // [Image of Cutia]
-    habits: "Diurna e terrestre, vive em tocas. Esconde sementes para consumir depois.",
-    lifeExpectancy: "Cerca de 10 a 15 anos em cativeiro, menos na natureza.",
-    diet: "Herbívora, alimentando-se de sementes, frutas e folhas.",
-    distribution: "América Central e do Sul, em florestas e áreas arborizadas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+cutia" // Exemplo de link para som/vídeo
+    scientificName: "Dasyprocta azarae", 
+    imageUrl: "https://i.imgur.com/H6U00xL.jpeg", // [Image of Cutia]
+    habits: "são roedores de hábitos diurnos crepusculares. Vivem em pares ou pequenos grupos, são terrestres e usam tocas em áreas de mata e plantações. ",
+    lifeExpectancy: " varia entre 10 a 20 anos.",
+    diet: "são animais herbívoros, consumindo frutos, folhas, sementes, raízes e outras plantas. Elas auxiliam na dispersão de plantas na natureza, uma vez que possuem o hábito de enterrar frutos e sementes para o consumo futuro.",
+    distribution: "presente em algumas regiões da América do Sul, incluindo o Brasil, Argentina, Paraguai e Bolívia. No Brasil pode ser encontrada principalmente nas regiões Centro-Oeste, Sul e Sudeste.",
+    learnMoreLink: "https://www.youtube.com/watch?v=Ki9Fj6oq1yA" // Exemplo de link para som/vídeo
   },
   {
     id: 6,
-    commonName: "Tartaruga",
-    scientificName: "Chelonia mydas", 
-    imageUrl: "https://placehold.co/400x300/81A1C1/000000?text=Tartaruga", // [Image of Tartaruga]
-    habits: "Aquática ou terrestre, depende da espécie. Podem ser solitárias ou viver em grupos.",
-    lifeExpectancy: "Variável, pode ser dezenas ou centenas de anos dependendo da espécie.",
-    diet: "Variável, herbívora, carnívora ou onívora dependendo da espécie.",
-    distribution: "Global, em ambientes aquáticos e terrestres.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+tartaruga" // Exemplo de link para som/vídeo
+    commonName: "Tatu-galinha", // Alterado de "tatu"
+    scientificName: "Dasypus novemcinctus", 
+    imageUrl: "https://i.imgur.com/0pgFurs.jpeg", // [Image of Tatu-galinha]
+    habits: "terrestres, solitários e de hábitos crepusculares e noturnos. Habitam em tocas que eles mesmos cavam, sendo excelentes escavadores. Embora sejam mais ativos durante a noite, podem ser observados durante o dia (especialmente dias mais frios. Constroem tocas complexas com vários metros de extensão, que servem como refúgio e abrigo.",
+    lifeExpectancy: "entre 12 e 15 anos.",
+    diet: "embora frequentemente classificados como insetívoros, sua alimentação é mas ampla, consumindo também pequenos vertebrados, raízes, frutos e fungos, além de insetos e larvas.",
+    distribution: "ocorrem desde o sul dos Estados Unidos até o norte da Argentina e Uruguai.",
+    learnMoreLink: "https://www.youtube.com/watch?v=hvDU1Gc4Bgo" // Exemplo de link para som/vídeo
   },
   {
     id: 7,
-    commonName: "Tatu-galinha", // Alterado de "tatu"
-    scientificName: "Dasypus novemcinctus", 
-    imageUrl: "https://placehold.co/400x300/A3BE8C/000000?text=Tatu-Galinha", // [Image of Tatu-galinha]
-    habits: "Noturno, constrói tocas, solitário. Possui carapaça protetora.",
-    lifeExpectancy: "Cerca de 10 a 15 anos na natureza.",
-    diet: "Onívora, comendo insetos, larvas, pequenos vertebrados, ovos e algumas plantas.",
-    distribution: "Américas, em diversos biomas como florestas, cerrados e campos.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+tatu-galinha" // Exemplo de link para som/vídeo
+    commonName: "Jararaca",
+    scientificName: "Bothrops jararaca",
+    imageUrl: "https://i.imgur.com/W95fk1k.jpeg", // [Image of Jararaca]
+    habits: "serpente terrestre de hábitos crepusculares e noturnos. São mais ativas em estações chuvosas e geralmente tentam fugir quando são vistas, mas tendem a atacar se sentirem ameaçadas. Sua coloração e padrão a ajudam a se camuflar nas vegetações.",
+    lifeExpectancy: "entre 15 a 20 anos.",
+    diet: "são carnívoras e sua alimentação varia conforme a idade. Filhotes e jovens se alimentam principalmente de anfíbios e artrópodes (como lacraias). Já os adultos preferem pequenos mamíferos (como roedores).",
+    distribution: "encontrada no sudeste e sul do Brasil, com ocorrências também em regiões próximas do Paraguai e Argentina. Dentro do Brasil podem ser encontradas desde o sul da Bahia até o Rio Grande do Sul.",
+    learnMoreLink: "https://www.youtube.com/watch?v=gvU3ffErS04" // Exemplo de link para som/vídeo
   },
   {
     id: 8,
-    commonName: "Jararaca",
-    scientificName: "Bothrops jararaca",
-    imageUrl: "https://placehold.co/400x300/D8DEE9/000000?text=Jararaca", // [Image of Jararaca]
-    habits: "Noturna, terrestre, peçonhenta. Prefere áreas úmidas e com vegetação densa.",
-    lifeExpectancy: "Cerca de 10 a 15 anos.",
-    diet: "Carnívora, alimentando-se de roedores, anfíbios e outras serpentes.",
-    distribution: "Brasil (especialmente Mata Atlântica), Argentina, Paraguai.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+jararaca" // Exemplo de link para som/vídeo
-  },
-  {
-    id: 9,
     commonName: "Coral",
-    scientificName: "Micrurus corallinus", 
-    imageUrl: "https://placehold.co/400x300/BF616A/000000?text=Cobra+Coral", // [Image of Coral]
-    habits: "Noturna, terrestre e fossorial (vive em tocas). Peçonhenta.",
-    lifeExpectancy: "Cerca de 10 anos.",
-    diet: "Carnívora, alimentando-se de outras cobras e lagartos.",
+    scientificName: "Aspidelaps lubricus", 
+    imageUrl: "https://i.imgur.com/aiuvPL4.jpeg", // [Image of Coral]
+    habits: "espécie noturna, geralmente se escondem sob rochas, em tocas ou túneis durante o dia e saem para caçar à noite (especialmente em noites mais frias). São cobras tímidas, que preferem evitar o contato com seres humanos, apesar disso, possuem um veneno neurotóxico perigoso.",
+    lifeExpectancy: "não é precisamente definida, mas espécies similares podem viver entre 9 a 15 anos.",
+    diet: "sua alimentação consiste principalmente de pequenos vertebrados como lagartos, pequenos roedores e outras cobras como dormideiras e cobras-d’água.",
     distribution: "América do Sul, em florestas, cerrados e campos.",
     learnMoreLink: "https://www.youtube.com/results?search_query=som+cobra+coral" // Exemplo de link para som/vídeo
   },
   {
-    id: 10,
+    id: 9,
     commonName: "PICA-PAU-DE-BANDA-BRANCA", // Alterado de "Pica-pau"
     scientificName: "Dryocopus lineatus", // Atualizado para Pica-pau-de-banda-branca
-    imageUrl: "https://placehold.co/400x300/EBCB8B/000000?text=Pica-Pau-Banda-Branca", // [Image of PICA-PAU-DE-BANDA-BRANCA]
-    habits: "Diurno, arborícola, usa o bico para perfurar madeira em busca de alimento.",
-    lifeExpectancy: "Cerca de 5 a 10 anos.",
-    diet: "Insetívoro, alimentando-se de larvas e insetos encontrados na madeira.",
-    distribution: "Américas, em florestas, áreas arborizadas e até áreas urbanas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+pica+pau+de+banda+branca" // Exemplo de link para som/vídeo
+    imageUrl: "https://i.imgur.com/Mp4yOOO.jpeg", // [Image of PICA-PAU-DE-BANDA-BRANCA]
+    habits: "vivem solitários ou aos pares, principalmente em bordas de florestas e áreas com árvores esparsas. Sua principal atividade é a busca por alimento, que consiste de insetos e suas larvas, que ele encontra “martelando” troncos e galhos de árvores, tanto vivas quanto mortas, para chegar até os insetos.",
+    lifeExpectancy: "aproximadamente entre 7 a 12 anos.",
+    diet: "alimentam-se de insetos, larvas, sementes e frutos, mas principalmente dos insetos.",
+    distribution: "abrange desde o México até o norte da Argentina e Trinidad, no Caribe. No Brasil, são encontrados em grande parte do território, incluindo a Amazônia, o Nordeste, o Centro-Oeste e o Sudeste, com exceção do Rio de Janeiro e Espírito Santo.",
+    learnMoreLink: "https://www.youtube.com/watch?v=F_tByoug1Go" // Exemplo de link para som/vídeo
+  },
+  {
+    id: 10,
+    commonName: "Gralha-de-crista-negra", // Alterado de "Gralha de crista negra"
+    scientificName: "Cyanocorax chrysops",
+    imageUrl: "https://i.imgur.com/uqBL9iI.jpeg", // [Image of Gralha-de-crista-negra]
+    habits: "vive em bandos de 10 a 20 gralhas exceto em sua época de reprodução, quando se formam casais.  Um hábito interessante é que elas guardam pinhões enterrando-os no solo, o que contribui para a dispersão de sementes de araucária.",
+    lifeExpectancy: "pode chegar a 37 anos.",
+    diet: "é uma ave onívora, se alimenta de insetos, frutos, sementes, e pode comer ovos e filhotes de outras aves também.",
+    distribution: "sua distribuição geográfica abrange o centro-sul da América do Sul, incluindo o Brasil, Argentina, Paraguai, Uruguai e Bolívia.",
+    learnMoreLink: "https://www.youtube.com/watch?v=FKWmnuSvQ4c" // Exemplo de link para som/vídeo
   },
   {
     id: 11,
-    commonName: "Gralha-de-crista-negra", // Alterado de "Gralha de crista negra"
-    scientificName: "Cyanocorax cristatellus",
-    imageUrl: "https://placehold.co/400x300/B48EAD/000000?text=Gralha-Crista-Negra", // [Image of Gralha-de-crista-negra]
-    habits: "Diurna, social, vive em bandos. Conhecida por sua vocalização alta e peculiar.",
-    lifeExpectancy: "Cerca de 10 a 15 anos.",
-    diet: "Onívora, alimentando-se de sementes, frutas, insetos e pequenos vertebrados.",
-    distribution: "Centro-Oeste e Sudeste do Brasil, em cerrados e áreas com árvores esparsas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+gralha-de-crista-negra" // Exemplo de link para som/vídeo
-  },
-  {
-    id: 12,
     commonName: "Araçari-castanho", // Alterado de "Tucano (pequeno)"
     scientificName: "Pteroglossus castanotis", // Atualizado para Araçari-Castanho
-    imageUrl: "https://placehold.co/400x300/81A1C1/000000?text=Ara%C3%A7ari-Castanho", // [Image of Araçari-castanho]
-    habits: "Arborícola, vive em pares ou pequenos grupos. Se alimenta no topo das árvores.",
-    lifeExpectancy: "Até 15 anos.",
-    diet: "Onívora, comendo frutas, insetos, ovos de outras aves e pequenos vertebrados.",
+    imageUrl: "https://i.imgur.com/p9gwCkE.jpeg", // [Image of Araçari-castanho]
+    habits: "é uma ave conhecida por sua plumagem colorida e bico grande. É um importante dispersor de sementes, auxiliando na regeneração das florestas. Vive em diversos tipos de matas e utiliza vocalizações para manter a união do grupo enquanto procura alimento. Vivem em pequenos grupos, voando em fila indiana através de clareiras na floresta.",
+    lifeExpectancy: " aproximadamente 13 anos.",
+    diet: "sua dieta se baseia principalmente em frutas. Além de frutos, ele também se alimenta de flores, néctar e, ocasionalmente, de pequenos animais como insetos, ovos e filhotes de outras aves.",
     distribution: "América do Sul, em florestas tropicais e subtropicais.",
     learnMoreLink: "https://www.youtube.com/results?search_query=som+ara%C3%A7ari-castanho" // Exemplo de link para som/vídeo
   },
   {
+    id: 12,
+    commonName: "Escorpião-amarelo", // Alterado de "Escorpião amarelo"
+    scientificName: "Tityus serrulatus",
+    imageUrl: "https://i.imgur.com/fmaBxz3.jpeg", // [Image of Escorpião-amarelo]
+    habits: "tem hábitos noturnos e se esconde em lugares úmidos e escuros. Geralmente adaptado a ambientes urbanos, tornando-se um problema de saúde pública em áreas com alta concentração populacional.",
+    lifeExpectancy: "entre 4 a 5 anos.",
+    diet: "alimenta-se principalmente de insetos como baratas e outros invertebrados.",
+    distribution: "ocorrente no Brasil, sendo encontrado em todas as regiões do país.",
+    learnMoreLink: "https://www.youtube.com/watch?v=p2Yft42gihM" // Exemplo de link para som/vídeo
+  },
+  {
     id: 13,
-    commonName: "Gambá",
-    scientificName: "Didelphis albiventris", 
-    imageUrl: "https://placehold.co/400x300/5E81AC/000000?text=Gamb%C3%A1", // [Image of Gambá]
-    habits: "Noturno e terrestre, onívoro. Conhecido por se fingir de morto quando ameaçado.",
-    lifeExpectancy: "Cerca de 1 a 2 anos na natureza.",
-    diet: "Onívora, comendo frutas, insetos, ovos, pequenos roedores e carniça.",
-    distribution: "Américas, em diversos biomas e áreas urbanas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+gamb%C3%A1" // Exemplo de link para som/vídeo
+    commonName: "Bem-te-vi",
+    scientificName: "Pitangus sulphuratus ",
+    imageUrl: "https://i.imgur.com/cqvP17D.jpeg", // [Image of Bem-te-vi]
+    habits: "é uma espécie agressiva e defende seu território com afinco, especialmente durante a época de reprodução, chegando a ameaçar aves de rapina como gaviões e urubus quando se aproximam. Geralmente é visto sozinho, em pares ou pequenos grupos, mas pode se juntar a bandos de outras aves que se alimentam de insetos.",
+    lifeExpectancy: "varia entre 8 e 12 anos na natureza, mas pode viver mais em cativeiro.",
+    diet: "é um pássaro insetívoro, mas também come frutas, ovos, girinos, peixes pequenos, minhocas e até pequenos roedores. Além de poder consumir crustáceos, flores e parasitas como carrapatos.",
+    distribution: "ocorre desde o sul dos Estados Unidos até a Argentina. No Brasil é uma ave comum, uma vez que pode ser encontrada em todo o território.",
+    learnMoreLink: "https://www.youtube.com/watch?v=UMAnr-1m-tY" // Exemplo de link para som/vídeo
   },
   {
     id: 14,
-    commonName: "Escorpião-amarelo", // Alterado de "Escorpião amarelo"
-    scientificName: "Tityus serrulatus",
-    imageUrl: "https://placehold.co/400x300/BEEB96/000000?text=Escorpi%C3%A3o-Amarelo", // [Image of Escorpião-amarelo]
-    habits: "Noturno, vive em ambientes úmidos e escuros. Peçonhento.",
-    lifeExpectancy: "Cerca de 3 a 7 anos.",
-    diet: "Carnívora, alimentando-se principalmente de insetos como grilos e baratas.",
-    distribution: "Espécie comum no Brasil, principalmente em áreas urbanas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=escorpi%C3%A3o-amarelo" // Exemplo de link para som/vídeo
+    commonName: "Cigarra",
+    scientificName: "Cicada orni", 
+    imageUrl: "https://i.imgur.com/rRxBShF.jpeg", // [Image of Cigarra]
+    habits: "é um inseto que se caracteriza por seu canto alto e repetitivo durante o verão (especialmente em áreas com árvores). As fêmeas depositam seus ovos em fendas nos ramos das árvores. O Canto da cigarra é produzido pelos machos e é utilizado para atrair fêmeas.",
+    lifeExpectancy: "no Brasil seu ciclo de vida dura um ou dois anos, sendo apenas dois ou três meses fora do solo.",
+    diet: "se alimentam principalmente de seiva de plantas. Tanto as ninfas quanto os adultos se alimentam da seiva, mas em locais diferentes da planta.",
+    distribution: "ocorrem em diversas regiões do mundo, com maior concentração em áreas tropicais e subtropicais.",
+    learnMoreLink: "https://www.youtube.com/watch?v=I9Qdm8jV8Sg" // Exemplo de link para som/vídeo
   },
   {
     id: 15,
-    commonName: "Bem-te-vi",
-    scientificName: "Pitangus sulphuratus",
-    imageUrl: "https://placehold.co/400x300/8FBCBB/000000?text=Bem-te-vi", // [Image of Bem-te-vi]
-    habits: "Diurno, vive em áreas abertas e urbanas. Conhecido por seu canto característico.",
-    lifeExpectancy: "Cerca de 5 a 8 anos.",
-    diet: "Onívora, alimentando-se de insetos, frutas, pequenos peixes e anfíbios.",
-    distribution: "Américas, do sul dos EUA à Argentina.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+bem+te+vi" // Exemplo de link para som/vídeo
-  },
-  {
-    id: 16,
-    commonName: "Cigarra",
-    scientificName: "Fidicina mannifera", 
-    imageUrl: "https://placehold.co/400x300/C04000/FFFFFF?text=Cigarra", // [Image of Cigarra]
-    habits: "Vivem parte da vida subterrânea e emergem para acasalar, produzindo som alto.",
-    lifeExpectancy: "Varia de 2 a 17 anos (ciclo de vida total).",
-    diet: "Herbívora, alimentando-se da seiva de árvores e plantas.",
-    distribution: "Global, em regiões tropicais e temperadas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+cigarra" // Exemplo de link para som/vídeo
-  },
-  {
-    id: 17,
     commonName: "Saruê",
-    scientificName: "Didelphis albiventris", 
-    imageUrl: "https://placehold.co/400x300/6B4000/FFFFFF?text=Saru%C3%AA", // [Image of Saruê]
-    habits: "Noturno e terrestre, onívoro. Conhecido por se fingir de morto quando ameaçado.",
-    lifeExpectancy: "Cerca de 1 a 2 anos na natureza.",
-    diet: "Onívora, comendo frutas, insetos, ovos, pequenos roedores e carniça.",
-    distribution: "Américas, em diversos biomas e áreas urbanas.",
-    learnMoreLink: "https://www.youtube.com/results?search_query=som+saru%C3%AA" // Exemplo de link para som/vídeo
+    scientificName: "Didelphis aurita", 
+    imageUrl: "https://i.imgur.com/EMOAu07.jpeg", // [Image of Saruê]
+    habits: "são seres de hábitos noturnos, adaptam-se bem a ambientes urbanos e são solitários. Quando se sentem ameaçados, podem emitir sons, mostrar os dentes e até mesmo se fingirem de mortos.",
+    lifeExpectancy: "varia de 2 a 5 anos.",
+    diet: "sua dieta inclui alimentos de origem vegetal bem como de origem animal, o que os torna onívoros. Comem insetos, aracnídeos, pequenos vertebrados como filhotes de cobras e aves, além de ovos e frutas. Devido a sua adaptabilidade, podem se alimentar de restos de comida dos humanos e até mesmo de carniça.",
+    distribution: "são encontrados na argentina, Brasil e Paraguai.",
+    learnMoreLink: "https://www.youtube.com/watch?v=fyYABLxZTJ8" // Exemplo de link para som/vídeo
   }
 ];
 
