@@ -7,7 +7,7 @@ const animalData = [
     id: 1,
     commonName: "Macaco-prego",
     scientificName: "Sapajus apella",
-    imageUrl: "https://i.imgur.com/niW25T6.jpeg", // [Image of Macaco-prego]
+    imageUrl: "https://i.imgur.com/W7GArhD.jpeg", // [Image of Macaco-prego]
     habits: "esses animais são conhecidos por sua inteligência e habilidades no uso de ferramentas. Possuem hábitos diurnos e preferem se movimentar pelas árvores, locomovendo-se com agilidade e usando sua cauda para se pendurar.",
     lifeExpectancy: "pode chegar a 50 anos.",
     diet: "são onívoros e têm uma dieta variada incluindo frutos, insetos, brotos, flores, sementes e pequenos vertebrados.",
