@@ -1,8 +1,8 @@
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
 }
 
 img {
@@ -19,7 +19,7 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #1a237e;
 }
 
 .search-input {
@@ -68,17 +68,17 @@ h1 {
 .card-info h2 {
   font-size: 1.25rem;
   margin: 0 0 0.5rem;
-  color: #222;
+  color: #1a237e;
   transition: color 0.2s ease;
 }
 
 .card-info h2:hover {
-  color: #4b6cb7;
+  color: #3949ab;
 }
 
 .card-info p {
   font-size: 0.9rem;
-  color: #555;
+  color: #444;
 }
 
 .no-results {
@@ -134,12 +134,13 @@ h1 {
 .detail-text {
   flex: 1;
   font-size: 1rem;
-  color: #444;
+  color: #222;
 }
 
 .detail-text p {
   margin-bottom: 1rem;
   line-height: 1.6;
+  color: #333;
 }
 
 .learn-button {
@@ -167,52 +168,62 @@ h1 {
   min-height: 100vh;
 }
 
-/* Tema escuro automático */
-@media (prefers-color-scheme: dark) {
-  body, html {
-    background-color: #121212;
-    color: #f0f0f0;
-  }
-
-  .container,
-  .detail {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-  }
-
-  .card {
-    background-color: #1e1e1e;
-    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
-  }
-
-  .card-info h2 {
-    color: #ddd;
-  }
-
-  .card-info p {
-    color: #bbb;
-  }
-
-  .search-input {
-    background-color: #2a2a2a;
-    border: 1px solid #444;
-    color: #eee;
-  }
-
-  .back-button {
-    background-color: #5b8cf5;
-  }
-
-  .back-button:hover {
-    background-color: #3d6ed4;
-  }
-
-  .learn-button {
-    background-color: #43a047;
-  }
-
-  .learn-button:hover {
-    background-color: #2e7d32;
-  }
+.theme-toggle-wrapper {
+  text-align: right;
+  padding: 1rem 2rem 0 2rem;
 }
 
+.theme-toggle-button {
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-button:hover {
+  background-color: #ddd;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .container,
+body.dark .detail,
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark .card-info h2,
+body.dark h1,
+body.dark .detail h1 {
+  color: #90caf9;
+}
+
+body.dark .search-input {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+body.dark .back-button {
+  background-color: #5b8cf5;
+}
+
+body.dark .back-button:hover {
+  background-color: #3d6ed4;
+}
+
+body.dark .learn-button {
+  background-color: #43a047;
+}
+
+body.dark .learn-button:hover {
+  background-color: #2e7d32;
+}
