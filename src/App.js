@@ -1,8 +1,9 @@
+// App.jsx (versão atualizada sem Tailwind)
 import React, { useState } from 'react';
+import './App.css';
 
-// Dados dos animais para o catálogo
-const animalData = [
-  {
+const animalData = [ 
+{
     id: 1,
     commonName: "Macaco-prego",
     scientificName: "Sapajus apella",
@@ -16,7 +17,7 @@ const animalData = [
   {
     id: 2,
     commonName: "Quati-de-cauda-anelada",
-    scientificName: " Nasua nasua",
+    scientificName: "Nasua nasua",
     imageUrl: "https://i.imgur.com/uqhqLa8.jpeg", // [Imagem de Quati]
     habits: "vivem em grupos principalmente formados por fêmeas e filhotes e são animais de hábitos sociais e diurnos. Os machos adultos normalmente se juntam aos grupos apenas em época de reprodução. São ágeis, utilizam a cauda para equilíbrio e são capazes de se locomover tanto no solo quanto em árvores.",
     lifeExpectancy: "entre 7 a 8 anos na natureza, mas pode chegar a 15 anos em cativeiro.",
@@ -29,8 +30,8 @@ const animalData = [
     commonName: "Tamanduá-Mirim",
     scientificName: "Tamandua tetradactyla",
     imageUrl: "https://i.imgur.com/lAfsgnG.jpeg", // [Imagem de Tamanduá-Mirim]
-    habits: ": é um animal de hábitos solitários e predominantemente noturno, embora pssa ser visto durante o dia em áreas mais tranquilas ou em busca de alimento. Vivem tanto em árvores quanto no chão e utilizam tocos de árvores, cavidades naturais ou tocas de tatus para descansar.",
-    lifeExpectancy: ": em cativeiro pode chegar a 19 anos, enquanto na natureza a expectativa é entre 7 e 10 anos.",
+    habits: "é um animal de hábitos solitários e predominantemente noturno, embora pssa ser visto durante o dia em áreas mais tranquilas ou em busca de alimento. Vivem tanto em árvores quanto no chão e utilizam tocos de árvores, cavidades naturais ou tocas de tatus para descansar.",
+    lifeExpectancy: "em cativeiro pode chegar a 19 anos, enquanto na natureza a expectativa é entre 7 e 10 anos.",
     diet: "é insetívoro, ou seja, sua alimentação é baseada principalmente em formigas e cupins. Além disso, ele pode se alimentar de larvas de abelhas, cera e mel.",
     distribution: "possui uma ampla distribuição geográfica na América do Sul. No Brasil, ocorre em todos os biomas.",
     learnMoreLink: "https://www.youtube.com/watch?v=-l4pqUiXjnA" // Exemplo de link para som/vídeo
@@ -40,7 +41,7 @@ const animalData = [
     commonName: "Teiú",
     scientificName: "Tupinambis merianae",
     imageUrl: "https://i.imgur.com/xqBipVs.jpeg", // [Imagem de Teiú]
-    habits: "é um lagarto com hábitos diurnos e terrestres, muitas vezes encontrado em áreas abertas, bordas da mata e até mesmo áreas urbanizadas. São conhecidos por se expor ao sol afim de regularem a temperatura corporal. Buscam ativamente seu alimento, utilizando a língua bifurcada para captar odores do ambiente. ",
+    habits: "é um lagarto com hábitos diurnos e terrestres, muitas vezes encontrado em áreas abertas, bordas da mata e até mesmo áreas urbanizadas. São conhecidos por se expor ao sol a fim de regularem a temperatura corporal. Buscam ativamente seu alimento, utilizando a língua bifurcada para captar odores do ambiente. ",
     lifeExpectancy: "entre 15 e 20 anos.",
     diet: "comem frutas, ovos, insetos, pequenos roedores e aves.",
     distribution: "ocorre em diversas regiões da América do Sul.",
@@ -52,7 +53,7 @@ const animalData = [
     scientificName: "Dasyprocta azarae",
     imageUrl: "https://i.imgur.com/H6U00xL.jpeg", // [Imagem de Cutia]
     habits: "são roedores de hábitos diurnos crepusculares. Vivem em pares ou pequenos grupos, são terrestres e usam tocas em áreas de mata e plantações. ",
-    lifeExpectancy: " varia entre 10 a 20 anos.",
+    lifeExpectancy: "varia entre 10 a 20 anos.",
     diet: "são animais herbívoros, consumindo frutos, folhas, sementes, raízes e outras plantas. Elas auxiliam na dispersão de plantas na natureza, uma vez que possuem o hábito de enterrar frutos e sementes para o consumo futuro.",
     distribution: "presente em algumas regiões da América do Sul, incluindo o Brasil, Argentina, Paraguai e Bolívia. No Brasil pode ser encontrada principalmente nas regiões Centro-Oeste, Sul e Sudeste.",
     learnMoreLink: "https://www.youtube.com/watch?v=Ki9Fj6oq1yA" // Exemplo de link para som/vídeo
@@ -64,7 +65,7 @@ const animalData = [
     imageUrl: "https://i.imgur.com/0pgFurs.jpeg", // [Imagem de Tatu-galinha]
     habits: "terrestres, solitários e de hábitos crepusculares e noturnos. Habitam em tocas que eles mesmos cavam, sendo excelentes escavadores. Embora sejam mais ativos durante a noite, podem ser observados durante o dia (especialmente dias mais frios. Constroem tocas complexas com vários metros de extensão, que servem como refúgio e abrigo.",
     lifeExpectancy: "entre 12 e 15 anos.",
-    diet: "embora frequentemente classificados como insetívoros, sua alimentação é mas ampla, consumindo também pequenos vertebrados, raízes, frutos e fungos, além de insetos e larvas.",
+    diet: "embora frequentemente classificados como insetívoros, sua alimentação é mais ampla, consumindo também pequenos vertebrados, raízes, frutos e fungos, além de insetos e larvas.",
     distribution: "ocorrem desde o sul dos Estados Unidos até o norte da Argentina e Uruguai.",
     learnMoreLink: "https://www.youtube.com/watch?v=hvDU1Gc4Bgo" // Exemplo de link para som/vídeo
   },
@@ -92,7 +93,7 @@ const animalData = [
   },
   {
     id: 9,
-    commonName: "PICA-PAU-DE-BANDA-BRANCA",
+    commonName: "Pica-pau-de-banda-branca",
     scientificName: "Dryocopus lineatus",
     imageUrl: "https://i.imgur.com/Mp4yOOO.jpeg", // [Imagem de PICA-PAU-DE-BANDA-BRANCA]
     habits: "vivem solitários ou aos pares, principalmente em bordas de florestas e áreas com árvores esparsas. Sua principal atividade é a busca por alimento, que consiste de insetos e suas larvas, que ele encontra “martelando” troncos e galhos de árvores, tanto vivas quanto mortas, para chegar até os insetos.",
@@ -118,7 +119,7 @@ const animalData = [
     scientificName: "Pteroglossus castanotis",
     imageUrl: "https://i.imgur.com/p9gwCkE.jpeg", // [Imagem de Araçari-castanho]
     habits: "é uma ave conhecida por sua plumagem colorida e bico grande. É um importante dispersor de sementes, auxiliando na regeneração das florestas. Vive em diversos tipos de matas e utiliza vocalizações para manter a união do grupo enquanto procura alimento. Vivem em pequenos grupos, voando em fila indiana através de clareiras na floresta.",
-    lifeExpectancy: " aproximadamente 13 anos.",
+    lifeExpectancy: "aproximadamente 13 anos.",
     diet: "sua dieta se baseia principalmente em frutas. Além de frutos, ele também se alimenta de flores, néctar e, ocasionalmente, de pequenos animais como insetos, ovos e filhotes de outras aves.",
     distribution: "América do Sul, em florestas tropicais e subtropicais.",
     learnMoreLink: "https://www.youtube.com/results?search_query=som+ara%C3%A7ari-castanho" // Exemplo de link para som/vídeo
@@ -167,116 +168,76 @@ const animalData = [
     distribution: "são encontrados na argentina, Brasil e Paraguai.",
     learnMoreLink: "https://www.youtube.com/watch?v=fyYABLxZTJ8" // Exemplo de link para som/vídeo
   }
-];
+  ]; // Mantenha seus dados existentes aqui
 
-// Componente para exibir a lista de animais
 const AnimalList = ({ onSelectAnimal }) => {
-  // Estado para o termo de pesquisa
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Filtra os dados dos animais com base no termo de pesquisa
   const filteredAnimals = animalData.filter(animal =>
     animal.commonName.toLowerCase().includes(searchTerm.toLowerCase()) ||
     animal.scientificName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div className="container mx-auto p-4 md:p-8 bg-gray-50 min-h-screen font-sans">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">Catálogo de Animais do Parque Ecológico</h1>
-      
-      {/* Campo de pesquisa */}
-      <div className="mb-8 flex justify-center">
-        <input
-          type="text"
-          placeholder="Pesquisar por nome comum ou científico..."
-          className="w-full max-w-md px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div className="container">
+      <h1>Catálogo de Animais do Parque Ecológico</h1>
+      <input
+        type="text"
+        placeholder="Pesquisar por nome comum ou científico..."
+        className="search-input"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <div className="grid">
         {filteredAnimals.length > 0 ? (
           filteredAnimals.map((animal) => (
-            <div
-              key={animal.id}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer overflow-hidden transform hover:scale-105"
-              onClick={() => onSelectAnimal(animal.id)}
-            >
-              {/* Container da imagem com fallback */}
-              <div className="w-full h-48 sm:h-56 overflow-hidden bg-gray-200 flex items-center justify-center">
-                <img
-                  src={animal.imageUrl}
-                  alt={animal.commonName}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "https://placehold.co/400x300/CCCCCC/333333?text=Imagem+Não+Disponível"; // Imagem de placeholder
-                  }}
-                />
-              </div>
-              {/* Informações do animal */}
-              <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-900 mb-1 truncate">{animal.commonName}</h2>
-                <p className="text-sm text-gray-600 italic truncate"><i>{animal.scientificName}</i></p>
+            <div key={animal.id} className="card" onClick={() => onSelectAnimal(animal.id)}>
+              <img
+                src={animal.imageUrl}
+                alt={animal.commonName}
+                className="card-image"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "https://placehold.co/300x200/CCCCCC/333333?text=Imagem+Não+Disponível";
+                }}
+              />
+              <div className="card-info">
+                <h2>{animal.commonName}</h2>
+                <p><i>{animal.scientificName}</i></p>
               </div>
             </div>
           ))
         ) : (
-          <p className="col-span-full text-center text-gray-600 text-lg">Nenhum animal encontrado com este termo de pesquisa.</p>
+          <p className="no-results">Nenhum animal encontrado com este termo de pesquisa.</p>
         )}
       </div>
     </div>
   );
 };
 
-// Componente para exibir os detalhes de um animal específico
 const AnimalDetail = ({ animal, onBack }) => (
-  <div className="container mx-auto p-4 md:p-8 bg-gray-50 min-h-screen font-sans">
-    <button
-      onClick={onBack}
-      className="mb-6 px-6 py-2 bg-indigo-600 text-white rounded-full shadow-md hover:bg-indigo-700 transition-colors duration-300 flex items-center space-x-2"
-    >
-      {/* Ícone de seta para voltar */}
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-        <path fillRule="evenodd" d="M10.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l3.293 3.293a1 1 0 010 1.414z" clipRule="evenodd" />
-      </svg>
-      <span>Voltar</span>
+  <div className="container">
+    <button className="back-button" onClick={onBack}>
+      ← Voltar
     </button>
-
-    <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{animal.commonName}</h1>
-    <p className="text-lg text-gray-600 italic mb-6"><i>{animal.scientificName}</i></p>
-
-    <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl shadow-lg p-6 md:p-8">
-      {/* Box da imagem detalhada */}
-      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-2/5 xl:w-1/3 rounded-lg overflow-hidden shadow-md">
-        <img
-          src={animal.imageUrl}
-          alt={animal.commonName}
-          className="w-full h-auto max-h-96 object-cover rounded-lg"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = "https://placehold.co/600x400/CCCCCC/333333?text=Imagem+Não+Disponível"; // Imagem de placeholder
-          }}
-        />
-      </div>
-      {/* Informações detalhadas do animal */}
-      <div className="flex-grow text-gray-700 space-y-4">
-        <p><strong className="font-semibold text-gray-900">Hábitos:</strong> {animal.habits}</p>
-        <p><strong className="font-semibold text-gray-900">Expectativa de Vida:</strong> {animal.lifeExpectancy}</p>
-        <p><strong className="font-semibold text-gray-900">Alimentação:</strong> {animal.diet}</p>
-        <p><strong className="font-semibold text-gray-900">Distribuição:</strong> {animal.distribution}</p>
-        <a
-          href={animal.learnMoreLink}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-full shadow-md hover:bg-green-700 transition-colors duration-300 mt-4"
-        >
-          {/* Ícone de link externo */}
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V3h-6z" />
-            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-          </svg>
+    <h1>{animal.commonName}</h1>
+    <p><i>{animal.scientificName}</i></p>
+    <div className="detail">
+      <img
+        src={animal.imageUrl}
+        alt={animal.commonName}
+        className="detail-image"
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src = "https://placehold.co/600x400/CCCCCC/333333?text=Imagem+Não+Disponível";
+        }}
+      />
+      <div className="detail-text">
+        <p><strong>Hábitos:</strong> {animal.habits}</p>
+        <p><strong>Expectativa de Vida:</strong> {animal.lifeExpectancy}</p>
+        <p><strong>Alimentação:</strong> {animal.diet}</p>
+        <p><strong>Distribuição:</strong> {animal.distribution}</p>
+        <a href={animal.learnMoreLink} target="_blank" rel="noreferrer" className="learn-button">
           Conheça este animal
         </a>
       </div>
@@ -284,20 +245,15 @@ const AnimalDetail = ({ animal, onBack }) => (
   </div>
 );
 
-// Componente principal do aplicativo
 function App() {
-  // Estado para controlar qual animal está selecionado (null para exibir a lista)
   const [selectedAnimalId, setSelectedAnimalId] = useState(null);
-  // Encontra o animal selecionado com base no ID
   const selectedAnimal = animalData.find((animal) => animal.id === selectedAnimalId);
 
   return (
-    <div className="bg-gray-100 min-h-screen text-gray-800">
+    <div className="app-bg">
       {selectedAnimal ? (
-        // Se um animal estiver selecionado, exibe os detalhes
         <AnimalDetail animal={selectedAnimal} onBack={() => setSelectedAnimalId(null)} />
       ) : (
-        // Caso contrário, exibe a lista de animais
         <AnimalList onSelectAnimal={setSelectedAnimalId} />
       )}
     </div>
