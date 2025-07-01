@@ -1,4 +1,4 @@
-/* App.css atualizado com correções de margem e contraste no modo escuro */
+/* App.css restaurado com tamanho padronizado das imagens */
 
 html, body {
   margin: 0;
@@ -90,10 +90,12 @@ body.dark {
   background-color: #eee;
 }
 
-.tree-image {
+.tree-image,
+.detail-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .tree-info {
@@ -140,13 +142,6 @@ body.dark {
 
 .detail-image-box {
   flex: 1 1 300px;
-}
-
-.detail-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain; /* evita distorção */
-  border-radius: 4px;
 }
 
 .detail-info {
