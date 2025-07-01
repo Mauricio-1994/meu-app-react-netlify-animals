@@ -181,7 +181,7 @@ const AnimalList = ({ onSelectAnimal }) => {
 
   return (
     <div className="container">
-      <h1>Catálogo de Animais do Parque Ecológico</h1>
+      <h1>Catálogo de Animais do Parque Ecológico Danilo Marques Moura de Goioerê</h1>
       <input
         type="text"
         placeholder="Pesquisar por nome comum ou científico..."

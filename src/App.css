@@ -1,256 +1,165 @@
-body, html {
+/* App.css atualizado com correções de margem e contraste no modo escuro */
+
+html, body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-img {
-  display: block;
+body.light {
+  background-color: #ffffff;
+  color: #111;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #1a237e;
-  transition: color 0.3s ease;
-}
-
-.search-input {
-  width: 100%;
-  max-width: 500px;
-  margin: 1rem auto 2rem;
-  display: block;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 999px;
-  font-size: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-info {
-  padding: 1rem;
-  text-align: center;
-}
-
-.card-info h2 {
-  font-size: 1.25rem;
-  margin: 0 0 0.5rem;
-  color: #1a237e;
-  transition: color 0.3s ease;
-}
-
-.card-info h2:hover {
-  color: #3949ab;
-}
-
-.card-info p {
-  font-size: 0.95rem;
-  color: #444;
-  transition: color 0.3s ease;
-}
-
-.no-results {
-  text-align: center;
-  color: #666;
-  font-size: 1.1rem;
-}
-
-.back-button {
-  background-color: #4b6cb7;
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #3953a4;
-}
-
-.back-button:focus {
-  outline: 3px solid #a4c8ff;
-  outline-offset: 2px;
-}
-
-.detail {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-@media (min-width: 768px) {
-  .detail {
-    flex-direction: row;
-  }
-}
-
-.detail-image {
-  width: 100%;
-  max-width: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.detail-text {
-  flex: 1;
-  font-size: 1rem;
-  color: #222;
-  transition: color 0.3s ease;
-}
-
-.detail-text p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.detail h1 {
-  color: #1a237e;
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.detail i {
-  color: #444;
-  transition: color 0.3s ease;
-}
-
-.learn-button {
-  display: inline-block;
-  background-color: #2e7d32;
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.learn-button:hover {
-  background-color: #1b5e20;
-}
-
-.learn-button:focus {
-  outline: 3px solid #a4c8ff;
-  outline-offset: 2px;
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
 .app-bg {
-  background-color: #f0f2f5;
   min-height: 100vh;
-  transition: background-color 0.3s ease;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .theme-toggle-wrapper {
   text-align: right;
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem;
 }
 
 .theme-toggle-button {
-  background-color: #eee;
-  border: none;
   padding: 0.5rem 1rem;
-  border-radius: 30px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
 }
 
-.theme-toggle-button:hover {
-  background-color: #ddd;
+.catalog-container,
+.detail-container {
+  padding: 1rem 2rem;
 }
 
-/* 🌙 Modo escuro */
-body.dark {
-  background-color: #121212;
-  color: #f0f0f0;
+.catalog-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: inherit;
 }
 
-body.dark .container,
-body.dark .detail,
-body.dark .card {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+.search-input {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-body.dark .card-info h2,
-body.dark h1,
-body.dark .detail h1 {
-  color: #90caf9;
+.tree-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
-body.dark .search-input {
-  background-color: #2a2a2a;
-  border: 1px solid #444;
-  color: #eee;
+.tree-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-body.dark .back-button {
-  background-color: #5b8cf5;
+.tree-card:hover {
+  transform: scale(1.02);
 }
 
-body.dark .back-button:hover {
-  background-color: #3d6ed4;
+.image-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #eee;
 }
 
-body.dark .learn-button {
-  background-color: #43a047;
+.tree-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-body.dark .learn-button:hover {
-  background-color: #2e7d32;
+.tree-info {
+  padding: 1rem;
+  text-align: center;
 }
 
-body.dark .detail-text p,
-body.dark .card-info p,
-body.dark .detail i {
-  color: #fafafa;
+.tree-info h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.tree-info p {
+  margin: 0;
+  font-style: italic;
+  color: inherit;
+}
+
+.detail-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.detail-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.detail-image-box {
+  flex: 1 1 300px;
+}
+
+.detail-image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.detail-info {
+  flex: 2 1 400px;
+}
+
+.detail-info p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .detail-content {
+    flex-direction: column;
+  }
 }
 
