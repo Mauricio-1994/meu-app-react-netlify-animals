@@ -144,6 +144,8 @@ body.dark {
 
 .detail-image {
   width: 100%;
+  height: auto;
+  object-fit: contain; /* evita distorção */
   border-radius: 4px;
 }
 
